@@ -25,6 +25,6 @@ class BottomButton extends StatelessWidget {
   }
 
   void _onItemTapped(int index) {
-//    if (index == 2) Navigator.push(context, PerfilScreen.id);
+//    if (index == 2) Navigator.push();
   }
 }

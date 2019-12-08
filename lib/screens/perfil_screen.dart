@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:porto_hack_santos/componentes/rounded_button.dart';
+import 'package:porto_hack_santos/componentes/topo.dart';
 
 class PerfilScreen extends StatefulWidget {
   static const String id = 'perfil_screen';
@@ -11,15 +13,23 @@ class _PerfilScreenState extends State<PerfilScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: topoTela(nomePagina: 'Alertas'),
       body: SafeArea(
         child: Column(
           children: <Widget>[
             CircleAvatar(
-              radius: 35.0,
-              backgroundImage: null,
+              child: ClipOval(
+                child: Image.network(
+                  'https://scontent.fudi1-2.fna.fbcdn.net/v/t1.0-9/64449332_2721331774563110_2820441453472251904_n.jpg?_nc_cat=100&_nc_ohc=1QjarINsu90AQlws2w89Y6wUkdsoevsnSboVoUdqrmqYsAM6bNO1Zujig&_nc_ht=scontent.fudi1-2.fna&oh=f72c4ec5c78df7c5ae2696aa36dfb72f&oe=5E697CAE',
+                  width: 100.0,
+                  height: 100.0,
+                ),
+              ),
+              backgroundColor: Colors.transparent,
+              radius: 80.0,
             ),
             Text(
-              '',
+              'CARLOS DOKI',
               style: TextStyle(
                 fontSize: 28,
                 fontWeight: FontWeight.bold,
@@ -45,7 +55,7 @@ class _PerfilScreenState extends State<PerfilScreen> {
               ),
             ),
             SizedBox(
-              height: 45,
+              height: 40,
             ),
             Text(
               'Treinamentos',
@@ -56,16 +66,42 @@ class _PerfilScreenState extends State<PerfilScreen> {
               ),
             ),
             SizedBox(
-              height: 45,
+              height: 10,
+            ),
+            Text(
+              'Treinamento de combate de incendio de celulose',
+              style: TextStyle(
+                color: Color(0xFF626262),
+                fontSize: 15,
+              ),
+            ),
+            Text(
+              'Treinamento de primeiros socorros',
+              style: TextStyle(
+                color: Color(0xFF626262),
+                fontSize: 15,
+              ),
+            ),
+            SizedBox(
+              height: 100,
             ),
             Container(
               child: Row(
                 children: <Widget>[
                   Expanded(
-                    child: FlatButton(onPressed: null, child: Text('ALTERAR')),
+                    child: RoundedButton(
+                      title: 'ALTERAR',
+                      colour: Color(0xFF626262),
+                    ),
+                  ),
+                  SizedBox(
+                    width: 30.0,
                   ),
                   Expanded(
-                    child: FlatButton(onPressed: null, child: Text('OK!')),
+                    child: RoundedButton(
+                      title: 'OK',
+                      colour: Color(0xFFFFE367),
+                    ),
                   )
                 ],
               ),

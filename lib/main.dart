@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:porto_hack_santos/screens/main_screen.dart';
+import 'package:porto_hack_santos/screens/navio_screen.dart';
 import 'package:porto_hack_santos/screens/perfil_screen.dart';
 import 'package:porto_hack_santos/screens/second_screen.dart';
 
@@ -14,6 +15,7 @@ class MyApp extends StatelessWidget {
         MainScreen.id: (context) => MainScreen(),
         SecondScreen.id: (context) => SecondScreen(),
         PerfilScreen.id: (context) => PerfilScreen(),
+        NavioScreen.id: (context) => NavioScreen(),
       },
     );
   }

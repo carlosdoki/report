@@ -76,7 +76,50 @@ class _MainScreenState extends State<MainScreen> {
                           null
                       ? ''
                       : snapshot.data['data'][index]['sinistros'][0]
-                          ["data_inicio"];
+                              ["data_inicio"]
+                          .substring(0, 10);
+                  String hh = snapshot.data['data'][index]['sinistros'][0]
+                              ["data_inicio"] ==
+                          null
+                      ? ''
+                      : snapshot.data['data'][index]['sinistros'][0]
+                              ["data_inicio"]
+                          .substring(10);
+                  String statusTxt = '';
+                  List<Color> cColors = [];
+                  if (snapshot.data['data'][index]['sinistros'][0]["status"] ==
+                      "1") {
+                    statusTxt = "INICIADO";
+                    cColors = [
+                      Colors.red,
+                      Colors.redAccent,
+                      Colors.deepOrange,
+                      Colors.purpleAccent,
+                    ];
+                  }
+                  ;
+                  if (snapshot.data['data'][index]['sinistros'][0]["status"] ==
+                      "2") {
+                    statusTxt = "EM ANDAMENTO";
+                    cColors = [
+                      Colors.yellow,
+                      Colors.yellowAccent,
+                      Colors.amber,
+                      Colors.amberAccent,
+                    ];
+                  }
+                  ;
+                  if (snapshot.data['data'][index]['sinistros'][0]["status"] ==
+                      "3") {
+                    statusTxt = "RESOLVIDO";
+                    cColors = [
+                      Colors.green,
+                      Colors.greenAccent,
+                      Colors.lightGreen,
+                      Colors.lightGreenAccent,
+                    ];
+                  }
+                  ;
                   return new Card(
                     child: FlatButton(
                       onPressed: () {
@@ -139,7 +182,7 @@ class _MainScreenState extends State<MainScreen> {
                               child: Row(
                                 children: <Widget>[
                                   Text(
-                                    'Hora Inicio:',
+                                    'Hora Inicio: $hh',
                                     style: kTextStyle,
                                   ),
                                   SizedBox(
@@ -158,9 +201,13 @@ class _MainScreenState extends State<MainScreen> {
                             Container(
                               child: Row(
                                 children: <Widget>[
-                                  Text(
-                                    'Status:',
-                                    style: kTextStyle,
+                                  ColorizeAnimatedTextKit(
+                                    duration: Duration(milliseconds: 1000),
+                                    text: ['Status: ' + statusTxt],
+                                    textStyle: TextStyle(
+                                      fontSize: 17.0,
+                                    ),
+                                    colors: cColors,
                                   ),
                                   SizedBox(
                                     width: 15.0,

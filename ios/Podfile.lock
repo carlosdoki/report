@@ -112,9 +112,9 @@ PODS:
     - nanopb/encode (= 0.3.9011)
   - nanopb/decode (0.3.9011)
   - nanopb/encode (0.3.9011)
-  - Protobuf (3.11.0)
-  - webview_flutter (0.0.1):
+  - pinch_zoom_image (0.0.1):
     - Flutter
+  - Protobuf (3.11.0)
 
 DEPENDENCIES:
   - firebase_auth (from `.symlinks/plugins/firebase_auth/ios`)
@@ -125,7 +125,7 @@ DEPENDENCIES:
   - google_api_availability (from `.symlinks/plugins/google_api_availability/ios`)
   - google_maps_flutter (from `.symlinks/plugins/google_maps_flutter/ios`)
   - location_permissions (from `.symlinks/plugins/location_permissions/ios`)
-  - webview_flutter (from `.symlinks/plugins/webview_flutter/ios`)
+  - pinch_zoom_image (from `.symlinks/plugins/pinch_zoom_image/ios`)
 
 SPEC REPOS:
   trunk:
@@ -165,8 +165,8 @@ EXTERNAL SOURCES:
     :path: ".symlinks/plugins/google_maps_flutter/ios"
   location_permissions:
     :path: ".symlinks/plugins/location_permissions/ios"
-  webview_flutter:
-    :path: ".symlinks/plugins/webview_flutter/ios"
+  pinch_zoom_image:
+    :path: ".symlinks/plugins/pinch_zoom_image/ios"
 
 SPEC CHECKSUMS:
   Firebase: 458d109512200d1aca2e1b9b6cf7d68a869a4a46
@@ -194,8 +194,8 @@ SPEC CHECKSUMS:
   GTMSessionFetcher: 43b8b64263023d4f32caa0b40f4c8bfa3c5f36d8
   location_permissions: 195ff2a1182fa9029ef3f2653156961ee5a1e40b
   nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
+  pinch_zoom_image: 2455133f9c87dce3f63c828dd583e3b1cdaa2df9
   Protobuf: 394b2bf29ec303f4325e3ee4892c09e675647152
-  webview_flutter: db3aba222b23e4dc432e0c5882834123dc50ff9f
 
 PODFILE CHECKSUM: b6a0a141693093b304368d08511b46cf3d1d0ac5
 
