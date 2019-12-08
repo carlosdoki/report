@@ -1,0 +1,33 @@
+name: porto_hack_santos
+description: A new Flutter application.
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^0.1.2
+  animated_text_kit: ^1.3.1
+  google_maps_flutter: ^0.5.21+8
+  firebase_core: ^0.4.2+1
+  firebase_auth: ^0.15.1
+  firebase_messaging: ^6.0.2
+  http: ^0.12.0+2
+  modal_progress_hud: ^0.1.3
+  geolocator: ^5.1.4+2
+  webview_flutter: ^0.3.17
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - images/
+
