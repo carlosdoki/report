@@ -46,7 +46,7 @@ class _NavioScreenState extends State<NavioScreen> {
                 children: <Widget>[
                   Container(
                     child: Text(
-                      'MAERSK LINS',
+                      'MARIA',
                       style: TextStyle(
                         fontSize: 20.0,
                         fontWeight: FontWeight.bold,
@@ -60,21 +60,7 @@ class _NavioScreenState extends State<NavioScreen> {
                 children: <Widget>[
                   Container(
                     child: Text(
-                      'Status:',
-                      style: TextStyle(
-                        fontSize: 15.0,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.black,
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-              Row(
-                children: <Widget>[
-                  Container(
-                    child: Text(
-                      'Ações:',
+                      'Status: ATRACACAO',
                       style: TextStyle(
                         fontSize: 15.0,
                         fontWeight: FontWeight.bold,
@@ -92,6 +78,21 @@ class _NavioScreenState extends State<NavioScreen> {
                       'Tipo de carga nos conteiners:',
                       style: TextStyle(
                         fontSize: 15.0,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.black,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+              Row(
+//                https://educ4feelsrv.brazilsouth.cloudapp.azure.com/cargas
+                children: <Widget>[
+                  Container(
+                    child: Text(
+                      'ACUCAR A GRANEL',
+                      style: TextStyle(
+                        fontSize: 14.0,
                         fontWeight: FontWeight.bold,
                         color: Colors.black,
                       ),
